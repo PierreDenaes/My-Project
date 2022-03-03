@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Form Jquery</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+</head>
+<style>
+	input.error {
+    border: 1px solid red;
+}
+
+	label.error {
+    font-weight: normal;
+    color: red;
+}
+	select.error {
+	border: 1px solid red;	
+	}
+</style>
+<body>
+	<form class= "col-8 mr-auto ml-auto py-5 form" id="mainForm" method="post">
+  <h1>Project Form Js with JQuery validate</h1>
+  <div class="form-row">
+    <div class="col-md-4 mb-3">
+      <label for="validationFirstName">First name</label>
+      <input type="text" class="form-control" name="firstName" placeholder="First name">
+    </div>
+    <div id="reponse"></div>
+    <div class="col-md-4 mb-3">
+      <label for="validationlastName">Last name</label>
+      <input type="text" class="form-control" name="lastName" placeholder="Last name">
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="validationuserName">User Name</label>
+      <input type="text" class="form-control" name="userName" placeholder="userName">
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="validationDefaultEmail">Email address</label>
+      <input type="email" class="form-control" name="email" placeholder="name@example.com">
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="validationDefaultPassword">Password</label>
+      <input type="password" class="form-control" name="password" placeholder="Password">
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="validationDefaultConfirm">Confirm Password</label>
+      <input type="password" class="form-control" name="confirm" placeholder="Confirm password">
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="SelectPrefSex">Sex</label>
+      <select class="form-control" name="sex">
+        <option></option>
+        <option value="1">Man</option>
+        <option value="2">Woman</option>
+        <option value="3">Not really Define</option>
+      </select>
+    </div>
+    <div class="col-md-5 mb-3">
+      <label for="validationAge">Your Birth Day</label>
+      <input name="age" type="date" class="form-control">
+    </div>
+  </div>
+  <button class="submit-button btn btn-primary" type="submit">Submit form</button>
+</form>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
